@@ -1,5 +1,5 @@
 payload:
-  - IP-CIDR,17.188.168.160/32,H2,no-resolve
+  - IP-CIDR,17.188.168.160/32,no-resolve
   - IP-CIDR,13.57.140.122/32,no-resolve
   - IP-CIDR,63.187.150.193/32,no-resolve
   - IP-CIDR,3.138.145.73/32,no-resolve

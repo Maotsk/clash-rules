@@ -1,0 +1,53 @@
+rules:
+  # =========================
+  # WhatsApp звонки → PROXY
+  # =========================
+  - RULE-SET,whatsapp-ip,PROXY,no-resolve
+
+  # =========================
+  # Telegram → PROXY
+  # =========================
+  - GEOSITE,telegram,PROXY
+  - GEOIP,telegram,PROXY
+
+  # =========================
+  # WhatsApp → PROXY
+  # =========================
+  - GEOSITE,whatsapp,PROXY
+
+  # =========================
+  # YouTube → PROXY
+  # =========================
+  - GEOSITE,youtube,PROXY
+
+  # =========================
+  # Instagram → PROXY
+  # =========================
+  - GEOSITE,instagram,PROXY
+
+  # =========================
+  # Windy → PROXY
+  # =========================
+  - GEOSITE,windy,PROXY
+
+  # =========================
+  # Ookla Speedtest → PROXY
+  # =========================
+  - GEOSITE,ookla-speedtest,PROXY
+
+  # =========================
+  # Remnawave → PROXY
+  # =========================
+  - DOMAIN-SUFFIX,docs.rw,PROXY
+
+  # =========================
+  # ChatGPT / OpenAI → PROXY
+  # =========================
+  - DOMAIN-SUFFIX,chatgpt.com,PROXY
+  - DOMAIN-SUFFIX,openai.com,PROXY
+  - DOMAIN-SUFFIX,oaiusercontent.com,PROXY
+
+  # =========================
+  # Всё остальное
+  # =========================
+  - MATCH,DIRECT
